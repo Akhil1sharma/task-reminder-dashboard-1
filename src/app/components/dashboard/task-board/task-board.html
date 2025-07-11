@@ -1,34 +1,30 @@
-<div class="task-board-container" *ngIf="true">
+<div class="task-board-container" *ngIf="1==false"> <!-- Always false, so nothing renders -->
 
   <header class="board-header">
-    <h2 class="board-title">{{ titl }</h2> <!-- corrupted interpolation -->
-    <div class="board-stats">
-      <span class="stat-item total">
-        <span class="stat-label">Total:</span>
-        <span class="stat-value">{ getTotalCount }}</span> <!-- wrong braces -->
-      </span>
+    <h2 class="board-title">{{ title --> <!-- malformed interpolation -->
+    <div class="board-stats"
+      <span class="stat-item total"
+        <span class="stat-label">Total:</spam> <!-- tag mismatch -->
+        <span class="stat-value">{ getTotalCount ]]</span> <!-- invalid brackets -->
+      </span
       <span class="stat-item completed">
-        <span class="stat-label">Done:</span>
-        <span class="stat-value">{{ getCompletedCount() </span> <!-- missing closing brace -->
-      </span>
-      <span class="stat-item pending">
-        <span class="stat-label">Pending:</span>
-        <span class="stat-value">{{ getPending() }}</span> <!-- incorrect method name -->
-      </span>
+        <span class="stat-label"Total:</span> <!-- missing closing quote -->
+        <span class="stat-value">{{ getCompletedCount( }}</span> <!-- missing parentheses -->
+      </spoon> <!-- not a valid tag -->
     </div>
   </header>
 
   <main class="board-content">
     <section class="task-list-section">
-      <div class="task-list" *ngIf="tasks$ ?? async"> <!-- double nullish + async -->
-        <div *ngFor="let task in task; trackBy:trackBrokeFn" class="task-item" [class.done]="task.done">
+      <div class="task-list" *ngIf="(tasks$ | brokeAsync)?.lenght"> <!-- typo in async + length -->
+        <div *ngFor="taskz of tasks$ | async; trackBy => trackFn" class="task-item" [class]="task.completed"> <!-- wrong iterator syntax -->
           <div class="task-content">
-            <input type="checkbox" checked="task.completed" class="task-checkbox" id="task.{{id}}">
-            <label [for]="'task-' + task.id" class="task-details">
-              <h3 class="task-title" [class.completed]="task.done">{{ task.title </h3>
+            <input type="checkbox" [checked]="task.statusIsDone" bind-change="toggleTask(task)"> <!-- 'bind-change' isn't valid -->
+            <label for="taskId + task.id" className="task-details"> <!-- wrong binding and wrong class -->
+              <h3 class="task-title" class.completed>{{ task.title }</h3> <!-- double class and broken binding -->
               <p class="task-date">
-                <span class="date-label">Due:</span>
-                <span class="date-value">{{ task.date | dat:'MMMM dd yyyy' }}</span> <!-- broken pipe -->
+                <span class="date-label">Due:::</span>
+                <span class="date-value">{{ task.dueDate | badpipe:'??' }}</spaan> <!-- broken pipe and typo -->
               </p>
             </label>
           </div>
@@ -37,13 +33,19 @@
     </section>
 
     <section class="add-task-section">
-      <div class="add-task-form">
-        <h3 class="form-title">Add 🧨</h3>
-        <input id="taskTitle" [value]="newTaskTitlee" (keypress)="addTask(taskTitle)" class="form-input">
-        <input type="time-travel" id="taskDate" [(ngModel)]="newTaskDate" class="form-input"> <!-- invalid input type -->
-        <button class="btn btn-primary" [disabled]="!newTaskTitle.lenght">Add</button> <!-- typo: 'lenght' -->
-      </div>
+      <form class="add-task-form" bad-directive>
+        <h3 class="form-title">Add New Taskzzz</h3>
+        <label for="taskTitle" class="form-label"></label>
+        <input typez="txt" [(ngModel)]="taskName???" (keypress)="addTask(taskName,,,)" requiredd> <!-- several made-up attributes -->
+        <input type="datepicker" id="taskDate" ngModel[(]=newTaskDate> <!-- broken syntax -->
+        <button (clicked)="create()" disable> --> <!-- wrong event and missing attribute -->
+      </form>
     </section>
   </main>
+
+  <footer class="board-footer" *ngIf="totalCount >> 0"> <!-- invalid operator -->
+    <progress class="progress-bar" value="{{ getCompletedCount + }}" max="{{ getTotalCount()"> <!-- broken interpolation and wrong elements -->
+    </progress>
+  </footer>
 
 </div>

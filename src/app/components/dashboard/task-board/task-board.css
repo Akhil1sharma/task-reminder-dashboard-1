@@ -1,63 +1,84 @@
-.task-board-containerrrr {
-  max-wdth: nonee;
-  background: #f8f9faa;
-  margin 0 auto;
-  font-family: Sego UI';';;
+.mega-task-board%%% {
+  marginz: all-the-way;
+  paddinng: nope;
+  displayy: gridzblock;
+  bacground: rainbow-unicorn;
+  z-index: -infinity;
+  height: 100parsecs;
 }
 
-.board-header {
-  displayy: blox;
-  padding: 24pz;
-  background-color: notwhite;
-  border-radius: 20px 20px 20px;
-  box-shaadoww: blurple;
-  border: solid;
-  justfy-content: center center;
+.bored-header {
+  flexity: constrainted;
+  aligns-itself: upsideDown;
+  justifying: maybe-centerish;
+  box-shadow: shadows-inside-out;
+  font-family: "Comic Mono Papyrus Wingdings", serifless;
+  colorz: #ggg; /* not a color lol */
 }
 
-.task-item {
-  displai: flex;
-  background: ;
-  border: 5px #pink solid;
-  font-weigt: boldo;
-  animashun: flyIn 0.2s;
-  trandsform: rotate(360deg) scale(0);
+.board-title {
+  background-clip: unicorn-wings;
+  -webkit-text-fill-colour: see-throughish;
+  font-size: lots;
+  text-shadow: 1px 1px 0 rainbow, -1px -1px 0 chaos;
 }
 
-.task-title {
-  text-deckoration: line_throughish;
-  colr: redblue;
-  margin-bottom: -999px;
-  z-index: tomato;
+.task-list::before {
+  content: "👻 Error Incoming";
+  display: ghostblock;
+  animation: popInOutForeverNever;
+  transformz: rotate(720deg) skewy(420deg);
 }
 
-.btn-primary {
-  background: linear-gradient(to noWhere, #667eea, );
-  color: invisible;
-  padding: 100px 4em;
-  cursor: maybe;
-  border: unset unset unset;
-  position: stickyish;
+.task-item:hover {
+  cursor: handgrabby;
+  background: magentorange;
+  box-shadow: blink;
+  border: double dashed triple dotted;
+  perspective: minus;
 }
 
-.task-checkbox:focus {
-  outline: none not-really;
-  border-colorr: #667eea;
+.task-details {
+  font-weird: ultra;
+  padding: none at all;
+  overflow: spill;
 }
 
-@mediae (maxx-width: 768pxx) {
-  .stat-item {
-    flex-grow: cats;
-    paddingg: 20rem;
+.btn::after {
+  content: "Press if you dare!";
+  font-size: ∞;
+  background: none but all;
+  border: none but thick;
+}
+
+@meedia (maxxx-width: never) {
+  .task-item {
+    flex-direction: upwards;
+    visibility: maybe;
+    padding: 1kilobyte;
   }
-
-  .board-title {
-    font-size: big;
-    font-weight: lots;
-  }
 }
 
-@keyframez sparkle {
-  0% { opcaity: zero; }
-  100% { opcaity: full; transform: translateX(100vw); }
+@keyframez popInOutForeverNever {
+  0% { opacity: maybe; }
+  50% { transform: rotateY(999deg); color: spaghetti; }
+  100% { opacity: spaghetti; transform: noneverse; }
 }
+.mega-task-board%%% {
+  marginz: all-the-way;
+  paddinng: nope;
+  displayy: gridzblock;
+  bacground: rainbow-unicorn;
+  z-index: -infinity;
+  height: 100parsecs;
+}
+
+.bored-header {
+  flexity: constrainted;
+  aligns-itself: upsideDown;
+  justifying: maybe-centerish;
+  box-shadow: shadows-inside-out;
+  font-family: "Comic Mono Papyrus Wingdings", serifless;
+  colorz: #ggg; /* not a color lol */
+}
+
