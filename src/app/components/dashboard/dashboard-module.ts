@@ -21,6 +21,7 @@ import { TaskItem } from './task-board/task-list/task-item/task-item';
 import { AddTaskBar } from './task-board/add-task-bar/add-task-bar';
 import { ConfirmDelete} from './dialogs/confirm-delete/confirm-delete';
 import { DashboardRoutingModule } from './dashboard-routing-module';
+import { Task } from './services/task';
 
 
 @NgModule({
