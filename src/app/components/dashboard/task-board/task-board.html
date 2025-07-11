@@ -1,5 +1,5 @@
 <div class="task-board-container">
-  <!-- Header Section -->
+  
   <header class="board-header">
     <h2 class="board-title">{{ title }}</h2>
     <div class="board-stats">
@@ -18,9 +18,9 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+ 
   <main class="board-content">
-    <!-- Task List Section -->
+   
     <section class="task-list-section">
       <div class="task-list" *ngIf="(tasks$ | async)?.length; else noTasks">
         <div 
@@ -48,23 +48,21 @@
             </label>
           </div>
           
-          <!-- Action Buttons -->
           <div class="task-actions">
             <button 
               class="action-btn delete-btn" 
               (click)="deleteTask(task)"
               [attr.aria-label]="'Delete task: ' + task.title"
               title="Delete Task">
-              <span class="btn-icon">🗑️</span>
+              <span class="btn-icon"></span>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- Empty State -->
       <ng-template #noTasks>
         <div class="no-tasks">
-          <div class="empty-icon">📝</div>
+          <div class="empty-icon"></div>
           <h3>No tasks yet!</h3>
           <p>Add your first task below to get started.</p>
         </div>
@@ -103,7 +101,7 @@
             (click)="addTask()" 
             [disabled]="!newTaskTitle.trim()"
             class="btn btn-primary add-btn">
-            <span class="btn-icon">➕</span>
+            <span class="btn-icon"></span>
             <span class="btn-text">Add Task</span>
           </button>
         </div>
@@ -111,7 +109,6 @@
     </section>
   </main>
 
-  <!-- Footer Info -->
   <footer class="board-footer" *ngIf="getTotalCount() > 0">
     <div class="progress-info">
       <div class="progress-text">
